@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(19, 122, 170);
+}
+ header {
+    font-size:200%;
+    background-color: rgb(24, 24, 161);
+    border: solid 5px;
+    border-color: aqua;
+ }
+
+ .headertext {
+    color: ;
+ }
+ .headerlist {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 10%;
+} 
+ 
+ header a {
+    font-size: 70%;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: aliceblue;
+ }
