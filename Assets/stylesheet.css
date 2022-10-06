@@ -1,6 +1,7 @@
 body {
     background-color: rgb(19, 122, 170);
 }
+
  header {
     font-size:200%;
     background-color: rgb(24, 24, 161);
@@ -8,10 +9,7 @@ body {
     border-color: aqua;
  }
 
- .headertext {
-    color: ;
- }
- .headerlist {
+.headerlist {
     display: flex;
     justify-content: flex-end;
     margin-left: 10%;
@@ -24,3 +22,93 @@ body {
     margin-right: 5%;
     color: aliceblue;
  }
+
+.box {
+   height: 20px;
+   width: 20px;
+   margin-bottom: 15px;
+   border: 1px solid black;
+   clear: both;
+   float:inline-start
+ }
+
+section {
+   position: relative;
+   margin: 50px;
+   margin-left: 15%; 
+   font-size:30px;
+}
+
+section div {   
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+ footer {
+    border: 5px solid blue;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    align-items: center; 
+ }
+ 
+section[data-descr]
+{
+position: relative;
+}
+
+.secondary {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+section div{
+   padding: 100px;
+   padding-left: 1%;
+   padding-bottom: 5%;
+}
+
+section div[data-descr]{
+   width: 40%;
+}
+
+
+section div[data-descr]::after {
+margin-top: 20px;
+content:attr(data-descr);
+display:contents;
+}
+
+section div[id] {
+   border: solid 10px pink;
+   width: 50%;
+   height: 10%;
+   margin: auto;
+   padding: 100px;
+   padding-left: 1%;
+   padding-bottom: 5%;
+}
+
+ footer a {
+    margin-left: 10% ;
+    margin-right: 10%;
+    font-size: large;
+
+ }
+
+ footer ::before {
+   content: id;
+}
+
+#main 
+{
+   border: solid 10px pink;
+   width: 50%;
+   height: 10%;
+   margin: auto;
+   padding: 225px;
+   padding-left: 1%;
+   padding-bottom: 5%;
+
+}
