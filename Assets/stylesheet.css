@@ -2,11 +2,17 @@ body {
     background-color: rgb(19, 122, 170);
 }
 
+.line {
+position: absolute;
+border: solid 3px black;
+height: 180%;
+margin-left: 13%;
+border-radius: 5%;
+
+}
  header {
     font-size:200%;
-    background-color: rgb(24, 24, 161);
-    border: solid 5px;
-    border-color: aqua;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
  }
 
 .headerlist {
@@ -21,8 +27,17 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     color: aliceblue;
+   
  }
 
+
+ .box {
+   margin-left: 50%;
+   padding: 10px;
+   padding-bottom: ;
+   position: relative;
+
+ }
 .box {
    height: 20px;
    width: 20px;
@@ -39,10 +54,6 @@ section {
    font-size:30px;
 }
 
-section div {   
-   margin-top: 20px;
-   margin-bottom: 20px;
-}
 
  footer {
     border: 5px solid blue;
@@ -52,19 +63,13 @@ section div {
     align-items: center; 
  }
  
-section[data-descr]
-{
-position: relative;
-}
-
 .secondary {
    display: flex;
    justify-content: space-around;
    flex-wrap: wrap;
 }
 
-section div{
-   padding: 100px;
+section div {   
    padding-left: 1%;
    padding-bottom: 5%;
 }
@@ -77,19 +82,74 @@ section div[data-descr]{
 section div[data-descr]::after {
 margin-top: 20px;
 content:attr(data-descr);
-display:contents;
+position: absolute;
+font-size: large;
+color: aliceblue;
+
 }
 
-section div[id] {
+
+.Sections div[id]::before , footer[id]::before {
+content:attr(id);
+position:absolute;
+margin-left: -15%;
+color: aliceblue;
+
+}
+
+.secondary div[data-descr] {
+border: solid 10px pink;
+width: 40%;
+height: 20%;
+margin: auto;
+margin-bottom: 5%;
+padding: 100px;
+padding-left: 1%;
+padding-bottom: 1%;
+padding-top: 15%;
+}
+
+.secondary div[data-descr]:hover {
+
+   
+}
+
+
+.main 
+{
    border: solid 10px pink;
    width: 50%;
    height: 10%;
    margin: auto;
-   padding: 100px;
+   padding: 225px;
    padding-left: 1%;
    padding-bottom: 5%;
+   background-image: url("https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+   background-position: center;
 }
 
+.LED {
+   background-image: url("https://images.unsplash.com/photo-1636215096587-21982fbf5843?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80")
+}
+
+.calc {
+   background-image: url("https://images.unsplash.com/photo-1611125832047-1d7ad1e8e48f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+   background-position: center;
+
+}
+
+.puzzle {
+   background-image: url("https://images.unsplash.com/photo-1554189097-ffe88e998a2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+   background-size:cover;
+   background-position: center;
+}
+
+
+.run {
+   background-image: url("https://images.unsplash.com/photo-1598702631024-b282c0fd96b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+   background-position: center;
+   background-size: cover;
+}
  footer a {
     margin-left: 10% ;
     margin-right: 10%;
@@ -99,16 +159,4 @@ section div[id] {
 
  footer ::before {
    content: id;
-}
-
-#main 
-{
-   border: solid 10px pink;
-   width: 50%;
-   height: 10%;
-   margin: auto;
-   padding: 225px;
-   padding-left: 1%;
-   padding-bottom: 5%;
-
 }
