@@ -124,11 +124,13 @@ opacity: .7;
 .secondary div[data-descr]:hover {
    background-color: #30cfd0;
    opacity: 1.5;
+   cursor: pointer;
 }
 
 
 .main 
 {
+   color: aliceblue;
    border: solid 10px rgb(24, 19, 85);
    width: 50%;
    height: 10%;
@@ -138,6 +140,13 @@ opacity: .7;
    padding-bottom: 5%;
    background-image: url("https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
    background-position: center;
+   opacity: .7;
+   transition: .5s;
+}
+
+.main:hover {
+   opacity: 1;
+   cursor: pointer;
 }
 
 .main::after {
